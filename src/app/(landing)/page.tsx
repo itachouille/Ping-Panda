@@ -2,6 +2,7 @@ import { Check } from "lucide-react"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import ShinyButton from "@/components/ShinyButton"
 import Heading from "@/components/Heading"
+import MockDiscordUI from "@/components/MockDiscordUI"
 
 const HomePage = () => {
   return (
@@ -58,7 +59,7 @@ const HomePage = () => {
         <div className="relative mx-auto">
           <MaxWidthWrapper className="relative">
             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-              {/*  TODO: Discord demo*/}
+              <MockDiscordUI></MockDiscordUI>
             </div>
           </MaxWidthWrapper>
         </div>
