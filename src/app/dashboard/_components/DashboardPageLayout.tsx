@@ -1,7 +1,7 @@
 import { ReactNode } from "react"
-import { Button } from "./ui/button"
 import { ArrowLeft } from "lucide-react"
-import Heading from "./Heading"
+import { Button } from "@/components/ui/button"
+import Heading from "@/components/Heading"
 
 interface DashboardPageLayoutProps {
   title: string
