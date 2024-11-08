@@ -1,6 +1,6 @@
 "use client"
 
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 import { LoadingSpinner } from "@/components/LoadingSpinner"
 import { Modal } from "@/components/Modal"
 import { Button, buttonVariants } from "@/components/ui/button"

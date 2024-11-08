@@ -30,7 +30,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 import Card from "@/components/Card"
 import EmptyCategoryState from "./EmptyCategoryState"
 import Heading from "@/components/Heading"

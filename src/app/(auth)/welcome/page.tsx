@@ -1,8 +1,8 @@
 "use client"
 
-import { client } from "@/app/lib/client"
 import Heading from "@/components/Heading"
 import { LoadingSpinner } from "@/components/LoadingSpinner"
+import { client } from "@/lib/client"
 import { useQuery } from "@tanstack/react-query"
 import { LucideProps } from "lucide-react"
 import { useRouter } from "next/navigation"

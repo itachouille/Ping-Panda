@@ -6,8 +6,16 @@ import DasboardPageContent from "./_components/DasboardPageContent"
 import CreateEventCategoryModal from "./_components/CreateEventCategoryModal"
 import { Button } from "@/components/ui/button"
 import { PlusIcon } from "lucide-react"
+import { PaymentSuccessModal } from "./_components/PaymentSuccessModal"
+import { createCheckoutSession } from "@/lib/stripe"
 
-const DashboardPage = async () => {
+interface PageProps {
+  searchParams: {
+    [key: string]: string | string[] | undefined
+  }
+}
+
+const DashboardPage = async ({ searchParams }: PageProps) => {
   const auth = await currentUser()
 
   if (!auth) redirect("/sign-up")
@@ -18,20 +26,37 @@ const DashboardPage = async () => {
 
   if (!user) redirect("/sign-in")
 
+  const intent = searchParams.intent
+
+  if (intent === "upgrade") {
+    const session = await createCheckoutSession({
+      userEmail: user.email,
+      userId: user.id,
+    })
+
+    if (session.url) redirect(session.url)
+  }
+
+  const success = searchParams.success
+
   return (
-    <DashboardPageLayout
-      cta={
-        <CreateEventCategoryModal>
-          <Button className="w-full sm:w-fit">
-            <PlusIcon className="size-4 mr-2" />
-            Add Category
-          </Button>
-        </CreateEventCategoryModal>
-      }
-      title="Dashboard"
-    >
-      <DasboardPageContent />
-    </DashboardPageLayout>
+    <>
+      {success ? <PaymentSuccessModal /> : null}
+
+      <DashboardPageLayout
+        cta={
+          <CreateEventCategoryModal>
+            <Button className="w-full sm:w-fit">
+              <PlusIcon className="size-4 mr-2" />
+              Add Category
+            </Button>
+          </CreateEventCategoryModal>
+        }
+        title="Dashboard"
+      >
+        <DasboardPageContent />
+      </DashboardPageLayout>
+    </>
   )
 }
 

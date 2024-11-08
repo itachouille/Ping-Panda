@@ -1,4 +1,4 @@
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 import Card from "@/components/Card"
 import { Button } from "@/components/ui/button"
 import { useMutation, useQueryClient } from "@tanstack/react-query"

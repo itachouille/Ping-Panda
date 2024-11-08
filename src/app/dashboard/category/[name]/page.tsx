@@ -2,7 +2,7 @@ import { db } from "@/db"
 import { currentUser } from "@clerk/nextjs/server"
 import { notFound } from "next/navigation"
 import DashboardPageLayout from "../../_components/DashboardPageLayout"
-import CategoryPageContent from "../../_components/CategoryPageContent"
+import { CategoryPageContent } from "../../_components/CategoryPageContent"
 
 interface PageProps {
   params: {
