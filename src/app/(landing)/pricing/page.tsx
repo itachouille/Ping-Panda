@@ -1,6 +1,6 @@
 "use client"
 
-import { client } from "@/app/lib/client"
+import { client } from "@/lib/client"
 import Heading from "@/components/Heading"
 import MaxWidthWrapper from "@/components/MaxWidthWrapper"
 import { Button } from "@/components/ui/button"
