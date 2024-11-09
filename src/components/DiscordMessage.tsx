@@ -62,7 +62,7 @@ const DiscordMessage = ({
         </div>
 
         <div className="bg-[#2f3136] text-sm w-full rounded p-3 mb-4 mt-1.5">
-          <div className="flex flex-row items-center justify-between mb-2">
+          <div className="flex-between flex-row mb-2">
             {badgeText ? (
               <span
                 className={cn(

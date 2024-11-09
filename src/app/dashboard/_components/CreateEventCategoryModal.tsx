@@ -158,7 +158,7 @@ const CreateEventCategoryModal = ({
                     key={emoji}
                     type="button"
                     className={cn(
-                      "size-10 flex items-center justify-center text-xl rounded-md transition-all",
+                      "size-10 flex-center text-xl rounded-md transition-all",
                       selectedEmoji === emoji
                         ? "bg-brand-100 ring-2 ring-brand-700 scale-110"
                         : "bg-brand-100 hover:bg-brand-200"

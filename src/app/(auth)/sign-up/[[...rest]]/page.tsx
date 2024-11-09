@@ -4,8 +4,8 @@ import { SignUp } from "@clerk/nextjs"
 
 const SignUpPage = () => {
   return (
-    <div className="w-full flex flex-1 items-center justify-center">
-      <SignUp />
+    <div className="w-full flex-1 flex-center">
+      <SignUp fallbackRedirectUrl="/welcome" forceRedirectUrl="/welcome" />
     </div>
   )
 }

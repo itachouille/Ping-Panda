@@ -106,7 +106,7 @@ const Layout = ({ children }: PropsWithChildren) => {
 
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* mobile header */}
-        <div className="md:hidden flex items-center justify-between p-4 border-b border-gray-200">
+        <div className="md:hidden flex-between p-4 border-b border-gray-200">
           <p className="text-lg/7 font-semibold text-brand-900">
             Ping<span className="text-brand-700">Panda</span>
           </p>
@@ -132,7 +132,7 @@ const Layout = ({ children }: PropsWithChildren) => {
           showModal={isDrawerOpen}
           setShowModal={setIsDrawerOpen}
         >
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex-between mb-4">
             <p className="text-lg/7 font-semibold text-brand-900">
               Ping<span className="text-brand-700">Panda</span>
             </p>

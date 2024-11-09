@@ -11,7 +11,7 @@ import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 import { Icons } from "@/components/Icons"
 
 const HomePage = () => {
-  const codeSnippet = `await fetch("http://localhost:3000/api/v1/events", {
+  const codeSnippet = `await fetch("https://ping-panda-one.vercel.app/api/v1/events", {
     method: "POST",
     body: JSON.stringify({
       category: "sale",
@@ -182,7 +182,7 @@ const HomePage = () => {
                     notifies you for all critical events in your SaaS.
                   </p>
                 </div>
-                <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <div className="flex-center flex-1 px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                   <Image
                     className="w-full max-lg:max-w-xs"
                     src="/bento-any-event.png"
@@ -210,7 +210,7 @@ const HomePage = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
+                <div className="flex-center flex-1 px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
                   <Image
                     className="w-full max-lg:max-w-xs"
                     src="/bento-custom-data.png"
@@ -306,7 +306,7 @@ const HomePage = () => {
                 satisfying.
               </p>
 
-              <div className="flex flex-col justify-center lg:justify-start sm:flex-row items-center sm:items-start gap-4 mt-2">
+              <div className="flex-center flex-col lg:justify-start sm:flex-row sm:items-start gap-4 mt-2">
                 <Image
                   src="/user-2.png"
                   className="rounded-full object-cover"
@@ -340,7 +340,7 @@ const HomePage = () => {
                 makes our lives easier.
               </p>
 
-              <div className="flex flex-col justify-center lg:justify-start sm:flex-row items-center sm:items-start gap-4 mt-2">
+              <div className="flex-center flex-col lg:justify-start sm:flex-row sm:items-start gap-4 mt-2">
                 <Image
                   src="/user-1.png"
                   className="rounded-full object-cover"

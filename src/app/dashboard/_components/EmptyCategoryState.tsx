@@ -7,7 +7,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
 
 const EmptyCategoryState = ({ categoryName }: { categoryName: string }) => {
-  const codeSnippet = `await fetch('http://localhost:3000/api/events', {
+  const codeSnippet = `await fetch('https://ping-panda-one.vercel.app/api/events', {
   method: 'POST',
   headers: {
     'Authorization': 'Bearer YOUR_API_KEY'
@@ -47,7 +47,7 @@ const EmptyCategoryState = ({ categoryName }: { categoryName: string }) => {
   return (
     <Card
       contentClassName="max-w-2xl w-full flex flex-col items-center p-6"
-      className="flex-1 flex items-center justify-center"
+      className="flex-1 flex-center"
     >
       <h2 className="text-xl/8 font-medium text-center tracking-tight text-gray-950">
         Create your first {categoryName} event
@@ -57,7 +57,7 @@ const EmptyCategoryState = ({ categoryName }: { categoryName: string }) => {
       </p>
 
       <div className="w-full max-w-3xl bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="bg-gray-800 px-4 py-2 flex justify-between items-center">
+        <div className="bg-gray-800 px-4 py-2 flex-between">
           <div className="flex space-x-2">
             <div className="size-3 rounded-full bg-red-500" />
             <div className="size-3 rounded-full bg-yellow-500" />

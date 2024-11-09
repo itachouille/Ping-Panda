@@ -55,7 +55,7 @@ export const Modal = ({
               className
             )}
           >
-            <div className="sticky top-0 z-20 flex w-full items-center justify-center rounded-t-[10px] bg-inherit">
+            <div className="sticky top-0 z-20 flex-center w-full rounded-t-[10px] bg-inherit">
               <div className="my-3 h-1 w-12 rounded-full bg-gray-300" />
             </div>
 

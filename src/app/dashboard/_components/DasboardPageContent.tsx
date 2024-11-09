@@ -38,7 +38,7 @@ const DasboardPageContent = () => {
 
   if (isEventCategoriesLoading) {
     return (
-      <div className="flex items-center justify-center flex-1 size-full">
+      <div className="flex-center flex-1 size-full">
         <LoadingSpinner />
       </div>
     )
@@ -105,7 +105,7 @@ const DasboardPageContent = () => {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between">
+              <div className="flex-between">
                 <Link
                   href={`/dashboard/category/${category.name}`}
                   className={buttonVariants({

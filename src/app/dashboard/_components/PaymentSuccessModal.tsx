@@ -41,7 +41,7 @@ export const PaymentSuccessModal = () => {
     >
       <div className="flex flex-col items-center">
         {isPending || !isPaymentSuccessful ? (
-          <div className="flex flex-col items-center justify-center h-64">
+          <div className="flex-center flex-col h-64">
             <LoadingSpinner className="mb-4" />
             <p className="text-lg/7 font-medium text-gray-900">
               Upgrading your account...

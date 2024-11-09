@@ -239,7 +239,7 @@ export const CategoryPageContent = ({
 
       return (
         <Card key={field}>
-          <div className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <div className="flex-between flex-row space-y-0 pb-2">
             <p className="text-sm/6 font-medium">
               {field.charAt(0).toUpperCase() + field.slice(1)}
             </p>
@@ -282,7 +282,7 @@ export const CategoryPageContent = ({
         <TabsContent value={activeTab}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
             <Card className="border-2 border-brand-700">
-              <div className="flex flex-row items-center justify-between space-y-0 pb-2">
+              <div className="flex-between flex-row space-y-0 pb-2">
                 <p className="text-sm/6 font-medium">Total Events</p>
                 <BarChart className="size-4 text-muted-foreground" />
               </div>
@@ -306,7 +306,7 @@ export const CategoryPageContent = ({
       </Tabs>
 
       <div className="flex flex-col gap-4">
-        <div className="flex items-center justify-between">
+        <div className="flex-between">
           <div className="w-full flex flex-col gap-4">
             <Heading className="text-3xl">Event overview</Heading>
           </div>

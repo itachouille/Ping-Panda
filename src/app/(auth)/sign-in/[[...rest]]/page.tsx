@@ -8,7 +8,7 @@ const Page = () => {
   const intent = searchParams.get("intent")
 
   return (
-    <div className="w-full flex-1 flex items-center justify-center">
+    <div className="w-full flex-1 flex-center">
       <SignIn
         forceRedirectUrl={intent ? `/dashboard?intent=${intent}` : "/dashboard"}
       />

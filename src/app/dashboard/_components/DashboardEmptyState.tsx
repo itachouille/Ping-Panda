@@ -17,7 +17,7 @@ const DashboardEmptyState = () => {
   })
 
   return (
-    <Card className="flex flex-col items-center justify-center rounded-2xl flex-1 text-center p-6">
+    <Card className="flex-center flex-col rounded-2xl flex-1 text-center p-6">
       <div className="flex justify-center w-full">
         <img
           src="/brand-asset-wave.png"
@@ -33,7 +33,7 @@ const DashboardEmptyState = () => {
         Start tracking events by creating your first category.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+      <div className="flex-center flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
         <Button
           disabled={isPending}
           onClick={() => insertQuickstartCategories()}
